@@ -20,6 +20,7 @@ jobs:
           cache-dependency-path: 'server/package-lock.json'
       - name: Install Modules
         run: npm install
+        working-directory: ./server
       - name: Execute Backend Unit tests
         run: npm run test
         working-directory: ./server
@@ -38,6 +39,7 @@ jobs:
           cache-dependency-path: 'client/package-lock.json'
       - name: Install Modules
         run: npm install
+        working-directory: ./client
       - name: Execute Frontend Unit tests
         run: npm run test
         working-directory: ./client
