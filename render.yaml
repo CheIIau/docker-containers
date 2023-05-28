@@ -1,0 +1,5 @@
+databases: #undone file
+  - name: postgres
+    databaseName: postgres
+    user: dbuser
+    postgresMajorVersion: 15
